@@ -15,7 +15,7 @@ def largest_sum(numbers: list[int]) -> tuple[int, int]:
         numbers.remove(m1)
         m2 = max(numbers)
         return m2
-        print(m1,m2)
+
 #h = [10,9,8,5,30,20,5]
 #m1 = max(h)
 #print(m1)
