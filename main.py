@@ -6,18 +6,20 @@
     #primeiro = 0  # o primeiro número da soma
     #segundo = 0  # o segundo número da soma
     #return primeiro, segundo
-def largest_sum(numbers: list[1,2,3,4,5,10]) -> tuple[int, int]:
-    m1 = max(numbers)
-    return m1
-    numbers.remove(m1)
-    m2 = max(numbers)
-    return m2
-    print(m1,m2)
-
-h = [10,9,8,5,30,20,5]
-m1 = max(h)
-print(m1)
-h.remove(m1)
-m2 = max(h)
-print(m2)
-print(m1+m2)
+def largest_sum(numbers: list[int]) -> tuple[int, int]:
+    if numbers == []:
+        return None
+    else:
+        m1 = max(numbers)
+        return m1
+        numbers.remove(m1)
+        m2 = max(numbers)
+        return m2
+        print(m1,m2)
+#h = [10,9,8,5,30,20,5]
+#m1 = max(h)
+#print(m1)
+#h.remove(m1)
+#m2 = max(h)
+#print(m2)
+#print(m1+m2)
