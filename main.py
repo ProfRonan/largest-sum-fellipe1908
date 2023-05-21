@@ -11,15 +11,23 @@ def largest_sum(numbers: list[int]) -> tuple[int, int]:
         return None
     else:
         m1 = max(numbers)
-        return m1
         numbers.remove(m1)
-        m2 = max(numbers)
-        return m2
+        if numbers == []:
+            return None 
+        else:
+            m2 = max(numbers)
+            return m2 , m1
 
-#h = [10,9,8,5,30,20,5]
-#m1 = max(h)
-#print(m1)
-#h.remove(m1)
-#m2 = max(h)
-#print(m2)
-#print(m1+m2)
+#h = [5]
+#if h == []:
+   #print("None")
+#else:
+ #   m1 = max(h)
+  #  print(m1)
+   # h.remove(m1)
+    #vif h == []:
+     #   print ("None")
+    #else:
+     #   m2 = max(h)
+      #  print(m2)
+       # print(m1,m2)
